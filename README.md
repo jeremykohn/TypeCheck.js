@@ -4,7 +4,7 @@ TypeCheck is an improved version of JavaScript's `typeof` operator.
 
 For example, `typeof 12.0` simply returns 'number'. `TypeCheck.getType(12.0)` provides more detailed information as well: `['number', 'finite', 'integer']`.
 
-And for an array, `typeof` in plain JavaScript returns `'object'` rather than `'array'`. JavaScript arrays are also objects, so `TypeCheck.getType([])` returns both: `['object', 'array']`.
+And for an array, `typeof []` in plain JavaScript just returns `'object'`. JavaScript arrays are also objects, so `TypeCheck.getType([])` returns both: `['object', 'array']`.
 
 Here are the types, and subtypes of each type, that TypeCheck recognizes:
 
