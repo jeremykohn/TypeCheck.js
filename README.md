@@ -2,21 +2,21 @@
 
 TypeCheck is an improved version of JavaScript's `typeof` operator. It takes any value and returns an array of strings that describe the value's type and subtypes.
 
-For example, `typeof 12.3` in plain JavaScript simply returns `'number'`. TypeCheck provides more detailed information as well: `['number', 'finite', 'float']`.
+For example, `typeof 12.0` simply returns `'number'`. TypeCheck provides more detailed information as well: `['number', 'finite', 'integer']`.
 
-And for an array, `typeof` returns `'object'` rather than `'array'`. It's true that JavaScript arrays are also objects, so TypeCheck returns both: `['object', 'array']`.
+And for an array, `typeof` in plain JavaScript returns `'object'` rather than `'array'`. It's true that JavaScript arrays are also objects, so TypeCheck returns both: `['object', 'array']`.
 
-Here are the types and subtypes that TypeCheck recognizes:
+Here are the types, and subtypes of each type, that TypeCheck recognizes:
 
-| Type      | Subtypes of that type         |
-|-----------|-------------------------------|
-| object    | array, function, date, regexp |
-| number    | infinite, finite, integer     |
-| string    | numericString, integerString  |
-| boolean   |                               |
-| undefined |                               |
-| null      |                               |
-| NaN       |                               |
+| Type        | Subtypes                              |
+|-------------|---------------------------------------|
+| 'object'    | 'array', 'function', 'date', 'regexp' |
+| 'number'    | 'infinite', 'finite', 'integer'       |
+| 'string'    | 'numericString', 'integerString'      |
+| 'boolean'   |                                       |
+| 'undefined' |                                       |
+| 'null'      |                                       |
+| 'NaN'       |                                       |
 
 These are mostly consistent with the types returned by the `typeof` operator.
 
