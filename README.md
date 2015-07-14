@@ -8,23 +8,23 @@ And for an array, `typeof` returns `'object'` rather than `'array'`. It's true t
 
 Here are the types and subtypes that TypeCheck recognizes:
 
-| Type      | Subtypes of that type            |
-|-----------|----------------------------------|
-| object    | array, function, date, regexp    |
-| number    | infinite, finite, integer, float |
-| string    | decimalString, anyNumericString  |
-| boolean   |                                  |
-| undefined |                                  |
-| null      |                                  |
-| NaN       |                                  |
+| Type      | Subtypes of that type         |
+|-----------|-------------------------------|
+| object    | array, function, date, regexp |
+| number    | infinite, finite, integer     |
+| string    | numericString, integerString  |
+| boolean   |                               |
+| undefined |                               |
+| null      |                               |
+| NaN       |                               |
 
 These are mostly consistent with the types returned by the `typeof` operator.
 
-However, unlike in plain JavaScript:
+However, unlike `typeof` in plain JavaScript:
 
 - TypeCheck does not consider `null` to be an 'object' or `NaN` (Not A Number) to be a 'number'.
 - Typecheck classifies 'function' as a subtype of 'object', although `typeof` considers it a 'function' only.
-- TypeCheck also classifies 'regexp' as a subtype of 'object', although `typeof` in some older browsers consider a regexp to be a 'function' instead.
+- TypeCheck also classifies 'regexp' as a subtype of 'object', although `typeof` in some older browsers considers a regexp to be a 'function' instead.
 
 ### Usage
 
