@@ -10,9 +10,9 @@ Here are the types, and subtypes of each type, that TypeCheck recognizes:
 
 | Type        | Subtypes                              |
 |-------------|---------------------------------------|
-| 'object'    | 'array', 'function', 'date', 'regexp' |
 | 'number'    | 'infinite', 'finite', 'integer'       |
 | 'string'    | 'numericString', 'integerString'      |
+| 'object'    | 'array', 'function', 'date', 'regexp' |
 | 'boolean'   |                                       |
 | 'undefined' |                                       |
 | 'null'      |                                       |
