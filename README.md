@@ -22,8 +22,8 @@ These are mostly consistent with the types returned by the `typeof` operator.
 
 However, unlike `typeof` in plain JavaScript:
 
-- TypeCheck has separate types for `null` and `NaN`, whereas typeof considers `null` to be an 'object' and `NaN` (Not A Number) to be a 'number'.
-- Typecheck classifies 'function' as a subtype of 'object', whereas `typeof` considers it a 'function' only.
+- TypeCheck has separate types for `null` and `NaN`, whereas `typeof` considers `null` to be an 'object' and `NaN` (Not A Number) to be a 'number'.
+- TypeCheck classifies 'function' as a subtype of 'object', whereas `typeof` considers it a 'function' only.
 - TypeCheck also classifies 'regexp' as a subtype of 'object', whereas `typeof` in some older browsers considers a regexp to be a 'function' instead.
 
 ### Usage
