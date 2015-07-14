@@ -34,10 +34,10 @@ TypeCheck provides the following methods:
 TypeCheck.getTypes(valueToCheck);
 ```
 
-This returns an array of strings, which lists all of `valueToCheck`'s types and subtypes.
+getTypes returns an array of strings, which lists all of `valueToCheck`'s types and subtypes.
 
 ```
 TypeCheck.typeMatch(valueToCheck, typeOrSubtype)
 ```
 
-This returns `true` if the array returned by `TypeCheck.getTypes(valueToCheck)` includes `typeOrSubtype`.
+typeMatch returns `true` if the array returned by `TypeCheck.getTypes(valueToCheck)` includes `typeOrSubtype`.
