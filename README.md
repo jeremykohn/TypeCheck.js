@@ -20,11 +20,11 @@ Here are the types and subtypes that TypeCheck recognizes:
 
 These are mostly consistent with the types returned by the `typeof` operator.
 
-However, unlike `typeof` in plain JavaScript:
+However, unlike in plain JavaScript:
 
 - TypeCheck does not consider `null` to be an 'object' or `NaN` (Not A Number) to be a 'number'.
 - Typecheck classifies 'function' as a subtype of 'object', although `typeof` considers it a 'function' only.
-- TypeCheck also classifies 'regexp' as a subtype of 'object', although some older browsers consider a regexp to be a 'function' instead.
+- TypeCheck also classifies 'regexp' as a subtype of 'object', although `typeof` in some older browsers consider a regexp to be a 'function' instead.
 
 ### Usage
 
