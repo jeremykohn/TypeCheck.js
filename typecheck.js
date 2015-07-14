@@ -29,11 +29,11 @@ SOFTWARE.
 
 Usage: 
 
-TypeCheck.getTypes(valueToCheck)
+typeCheck.getTypes(valueToCheck)
   valueToCheck: Any JavaScript value
   Returns an array of strings, that lists the types and subtypes of valueToCheck.
   
-TypeCheck.typeMatch(valueToCheck, typeOrSubtype)
+typeCheck.typeMatch(valueToCheck, typeOrSubtype)
   valueToCheck: Any JavaScript value
   typeOrSubtype: string
   Returns true if the string typeOrSubtype is present in the array returned by getTypes(valueToCheck).
@@ -53,7 +53,7 @@ Types and subtypes recognized by TypeCheck:
 */
 
 
-var TypeCheck = (function () {
+var typeCheck = (function () {
     "use strict";
 
     function getTypes(value) {
@@ -126,7 +126,7 @@ var TypeCheck = (function () {
             if (typeof typeOrSubtype === 'string') {
                 return (getTypes(value)).indexOf(typeOrSubtype) > -1;
             } else {
-                throw new Error('TypeCheck.js: Need a string as the second argument in TypeCheck.typeMatch()');
+                throw new Error('TypeCheck.js: Need a string as the second argument in typeCheck.typeMatch()');
             }
         } catch (e) {
             console.log(e.message);
